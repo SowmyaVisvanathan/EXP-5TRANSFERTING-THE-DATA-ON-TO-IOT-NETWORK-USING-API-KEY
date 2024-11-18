@@ -33,27 +33,23 @@ Construct the URL to send data to ThingSpeak using the API key and channel ID.
 Use the requests library to send HTTP POST requests containing sensor data to ThingSpeak.
 Code Implementation: Here’s the Python code that reads sensor data and sends it to ThingSpeak:
 
-## python
- 
+## Program:
+```
 import requests
 import time
 
-# ThingSpeak details
-channel_id = "2746385"  # Replace with your ThingSpeak Channel ID
-write_api_key = "83P37MVXRYZV3Y88"  # Replace with your Write API Key
+channel_id = "2746387"
+write_api_key = "IHPB70HFOJY4UW28"
 url = f"https://api.thingspeak.com/update?api_key={write_api_key}"
 
-# Data to send to ThingSpeak (Example: Sensor values)
-field_1 = 23.5  # Replace with actual sensor data
-field_2 = 65    # Replace with actual sensor data
+field_1 = 23.5
+field_2 = 65
 
-# Create the payload with sensor data
 payload = {
     'field1': field_1,
     'field2': field_2
 }
 
-# Send data to ThingSpeak
 def send_to_thingspeak(payload):
     try:
         response = requests.post(url, params=payload)
@@ -64,17 +60,11 @@ def send_to_thingspeak(payload):
     except Exception as e:
         print(f"Error: {e}")
 
-# Send data periodically (every 15 seconds)
 while True:
     send_to_thingspeak(payload)
-    time.sleep(15)  # Sleep for 15 seconds before sending the next data
-Execute the Program:
+    time.sleep(2)
 
-Run the Python script on your computer or upload the corresponding code to your microcontroller.
-The data will be sent to ThingSpeak every 15 seconds, and you can visualize it on the ThingSpeak platform.
-Monitor Data on ThingSpeak:
-
-Visit your ThingSpeak channel’s dashboard to view the real-time data being sent from the sensors.
+```
 ## Outputs:
 ![Screenshot 2024-11-15 081756](https://github.com/user-attachments/assets/6df9d28c-abd5-4cac-b19a-0f3c75678437)
 ![Screenshot 2024-11-15 084553](https://github.com/user-attachments/assets/d5c3eace-9f80-4eb9-9eed-28b0ee4eedef)
