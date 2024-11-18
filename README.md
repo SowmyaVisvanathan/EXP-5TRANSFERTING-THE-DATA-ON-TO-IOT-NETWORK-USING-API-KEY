@@ -1,8 +1,10 @@
+### NAME: Sowmya V
+### REGISTER NUMBER: 212222110045
+### DEPARTMENT: CSE IoT
+### YEAR: 3rd Year
+
 ## EXPERIMENT-05-TRANSFERRING-DATA-TO-IOT-NETWORK-USING-API-KEY
-## NAME:
-## REGISTER NUMBER:
-## DEPARTMENT:
-## YEAR:
+
 ## Aim:
 To transfer sensor data to an IoT platform (ThingSpeak) using an API key.
 
@@ -74,10 +76,9 @@ Monitor Data on ThingSpeak:
 
 Visit your ThingSpeak channel’s dashboard to view the real-time data being sent from the sensors.
 ## Outputs:
-Sensor Data Visualization: The sensor data will be updated on the ThingSpeak dashboard in real-time.
-Console Output: The console will print a success message for each data transfer, indicating the status (success or failure).
-## Simulation Screenshots:
-(Add screenshots of the ThingSpeak dashboard showing the sensor data and the Python script execution.)
+![Screenshot 2024-11-15 081756](https://github.com/user-attachments/assets/6df9d28c-abd5-4cac-b19a-0f3c75678437)
+![Screenshot 2024-11-15 084553](https://github.com/user-attachments/assets/d5c3eace-9f80-4eb9-9eed-28b0ee4eedef)
+![Screenshot 2024-11-15 085830](https://github.com/user-attachments/assets/279e4431-3c2d-412e-b253-f76ba071df7c)
 
 ## Results:
 The sensor data was successfully transferred to the ThingSpeak IoT platform using an API key. The experiment demonstrated how to send data from sensors to an IoT network and visualize it remotely using ThingSpeak. The periodic data updates were successfully logged and displayed on the ThingSpeak platform.
